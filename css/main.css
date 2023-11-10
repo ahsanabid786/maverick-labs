@@ -220,8 +220,16 @@ header{
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    transition: 0.3s ease-in-out;
 }
-  
+header ul.nav-right .login:hover{
+  transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transition: 0.3s ease-in-out;
+}
   header ul.nav-right .btn-sign-up {
     width: 120px !important;
     padding: 8px 11px;
@@ -230,7 +238,21 @@ header{
     color: #9415E3;
     background-color: #fff;
     font-weight: 700;
-  }
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+    
+  header ul.nav-right .btn-sign-up:hover{
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transition: 0.3s ease-in-out;
+}
   header.sticky{
     position: absolute;
   }
@@ -268,7 +290,7 @@ header{
   }
 
   .btn-social{
-    color: #fff;
+    color: #fff !important;
     position: relative;
     font-weight: 700;
     font-size: 16px;
@@ -285,9 +307,16 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease-in-out;
   }
   .btn-social:hover{
     color: #fff;
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transition: 0.3s ease-in-out;
   }
 
   .btn-social i{
@@ -381,6 +410,20 @@ footer .main-footer .social ul li i{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+footer .main-footer .social ul li i:hover{
+  background-color: #8CA6FE;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 footer .copyright .content{
     padding: 20px 0px;
