@@ -104,6 +104,56 @@
 
 
 
+  var wordsToType = document.querySelector("span[words]").getAttribute("words").split(','), 
+            typer =  document.querySelector("span[words]"), 
+            typingSpeed = (parseInt(typer.getAttribute('typing-speed')) || 90), 
+            typingDelay = (parseInt(typer.getAttribute('typing-delay')) || 900);
+    
+      var currentWordIndex = 0, currentCharacterIndex = 0; 
+
+      function type(){
+
+          var wordToType = wordsToType[currentWordIndex%wordsToType.length];
+
+          if(currentCharacterIndex < wordToType.length){
+              typer.innerHTML += wordToType[currentCharacterIndex++];
+              setTimeout(type, typingSpeed);
+          }else{
+
+              setTimeout(erase, typingDelay);
+          }}
+
+
+function erase(){
+    var wordToType = wordsToType[currentWordIndex%wordsToType.length]; 
+    if(currentCharacterIndex >0){
+        typer.innerHTML = wordToType.substr(0, --currentCharacterIndex -1);
+        setTimeout(erase, typingSpeed);
+    }else{
+
+        currentWordIndex++; 
+        setTimeout(type, typingDelay);
+    }
+
+}
+
+window.onload = function(){
+    type(); 
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Show the loader for 4 seconds
+  setTimeout(function() {
+      hideLoader();
+  }, 1000);
+});
+
+function hideLoader() {
+  // Add a class to the loader container to hide it
+  document.querySelector('.loader').classList.add('loader-hidden');
+}
+
 
 })(jQuery); // End of use strict
 
