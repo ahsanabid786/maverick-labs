@@ -275,10 +275,11 @@ header ul.nav-right .login:hover{
   }
 
 
-  .home-banner .content-area .content h1{
+  .home-banner .content-area .content h1 {
     font-size: 54px;
     color: #fff;
-  }
+    text-shadow: 2px 2px 4px #000;
+}
 
   .home-banner .content-area .content h1 span{
     color: #9D00E8;
@@ -390,6 +391,7 @@ footer .main-footer .social ul{
     align-items: center;
     gap: 30px;
     margin-bottom: 40px;
+    padding: 0px;
 }
 
 footer .main-footer .social ul li i{
