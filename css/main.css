@@ -275,7 +275,7 @@ header ul.nav-right .login:hover{
   }
 
   .home-banner .content-area .content h1 {
-    font-size: 45px;
+    font-size: 35px;
     color: #fff;
     text-shadow: 2px 2px 4px #000;
 }
@@ -452,12 +452,14 @@ footer .copyright .content span{
   position: absolute;
 }
 .loader-hidden{
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
 }
 
 .loader-icon {
-  animation: spin 6s linear infinite;
-  -webkit-animation: spin 6s linear infinite;
+  animation: spin 7s linear infinite;
+  -webkit-animation: spin 7s linear infinite;
 }
 
 @keyframes spin {

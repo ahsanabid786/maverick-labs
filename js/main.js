@@ -143,17 +143,19 @@ window.onload = function(){
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Show the loader for 4 seconds
   setTimeout(function() {
-      hideLoader();
+    hideLoader();
   }, 2000);
 });
 
 function hideLoader() {
-  // Add a class to the loader container to hide it
-  document.querySelector('.loader').classList.add('loader-hidden');
-}
+  var loader = document.querySelector('.loader');
+  loader.classList.add('loader-hidden');
 
+  loader.addEventListener('transitionend', function() {
+    loader.style.display = 'none';
+  });
+}
 
 })(jQuery); // End of use strict
 

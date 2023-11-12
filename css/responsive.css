@@ -12,17 +12,17 @@
         padding: 20px 20px;
     }
     .home-banner .content-area .content h1 {
-        font-size: 50px;
+        font-size: 34px;
         color: #fff;
     }
     .home-banner .content-area {
         padding: 80px 0px;
     }
     .home-banner .content-area .content-right {
-        padding: 60px 40px;
+        padding: 40px 40px;
     }
     .home-banner .content-area .content-right p {
-        font-size: 25px;
+        font-size: 20px;
     }
     .home-banner .content-area .content h1 br{
         display: none;
@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 1400px){
     .home-banner .content-area .content h1 {
-        font-size: 40px;
+        font-size: 28px;
         color: #fff;
     }
     header .header-padding {
@@ -102,7 +102,7 @@
         text-align: center;
     }
     .home-banner .content-area .content h1 {
-        font-size: 35px;
+        font-size: 26px;
     }
     header ul.nav-right {
         display: flex !important;
@@ -139,7 +139,7 @@
 
 @media only screen and (max-width: 768px){
     .home-banner .content-area .content h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
