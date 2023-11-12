@@ -106,8 +106,8 @@
 
   var wordsToType = document.querySelector("span[words]").getAttribute("words").split(','), 
             typer =  document.querySelector("span[words]"), 
-            typingSpeed = (parseInt(typer.getAttribute('typing-speed')) || 90), 
-            typingDelay = (parseInt(typer.getAttribute('typing-delay')) || 900);
+            typingSpeed = (parseInt(typer.getAttribute('typing-speed')) || 50), 
+            typingDelay = (parseInt(typer.getAttribute('typing-delay')) || 1000);
     
       var currentWordIndex = 0, currentCharacterIndex = 0; 
 
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Show the loader for 4 seconds
   setTimeout(function() {
       hideLoader();
-  }, 1000);
+  }, 2000);
 });
 
 function hideLoader() {
